@@ -1,0 +1,21 @@
+DATA QUALITY SUMMARY
+
+1. Successfully loaded all 10 datasets.
+
+2. Dataset dimensions and datatypes were checked.
+
+3. Missing values were observed only in the yoy_growth_pct column of 04_monthly_sip_inflows.csv. These missing values correspond to the initial months where year-over-year growth could not be calculated.
+
+4. All other datasets contain no missing values.
+
+5. Live NAV data was fetched successfully using the mfapi.in API.
+
+6. NAV data for five key schemes was fetched and stored.
+
+7. Fund master dataset was explored to understand fund houses, categories, sub-categories and risk categories.
+
+8. AMFI codes were validated against nav_history.
+
+9. No missing AMFI codes were found.
+
+10. Overall data quality is good and suitable for further analysis.
