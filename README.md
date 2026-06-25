@@ -51,42 +51,85 @@ MutualFund_Project
 - Prepared a data quality summary.
 - Uploaded the project to GitHub.
 
-Day 2 – Data Cleaning & SQLite Database Design
-Tasks Completed
-Data Cleaning
-Cleaned NAV history dataset.
-Converted dates to datetime format.
-Sorted records by AMFI code and date.
-Removed duplicates.
-Validated NAV values.
-Investor Transactions Cleaning
-Standardized transaction types.
-Validated transaction amounts.
-Fixed date formats.
-Verified KYC status values.
-Scheme Performance Cleaning
-Validated return metrics.
-Checked expense ratio ranges.
-Identified and reviewed anomalies.
-Database Design
-Designed SQLite star schema.
-Created dimension and fact tables.
-Defined primary and foreign key relationships.
-Database Loading
-Loaded cleaned datasets into SQLite using SQLAlchemy.
-Verified row counts after loading.
-SQL Analytics
-Created 10 analytical SQL queries for business insights.
-Documentation
-Created data dictionary.
-Created data quality summary report.
-Deliverables
-10 cleaned CSV files
-bluestock_mf.db
-schema.sql
-queries.sql
-data_dictionary.md
-data_quality_summary.txt
+
+# Day 2 – Data Cleaning & SQLite Database Design
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* SQLAlchemy
+* SQLite
+* Requests
+* Jupyter Notebook
+* Git & GitHub
+
+## Tasks Completed
+
+### Data Cleaning
+
+* Cleaned NAV history dataset.
+* Converted date columns to datetime format.
+* Sorted records by AMFI code and date.
+* Removed duplicate records.
+* Validated NAV values greater than zero.
+
+### Investor Transactions Cleaning
+
+* Standardized transaction type values.
+* Validated transaction amounts.
+* Fixed date formats.
+* Verified KYC status values.
+* Removed duplicate records.
+
+### Scheme Performance Cleaning
+
+* Validated return metrics as numeric values.
+* Checked expense ratio ranges.
+* Identified and reviewed anomalies.
+* Removed duplicate records.
+
+### Database Design
+
+* Designed SQLite star schema.
+* Created dimension and fact tables.
+* Defined primary and foreign key relationships.
+
+### Database Loading
+
+* Created SQLite database using SQLAlchemy.
+* Loaded cleaned datasets into SQLite.
+* Verified row counts after loading.
+
+### SQL Analytics
+
+* Created 10 analytical SQL queries for business insights.
+* Analyzed fund performance, NAV trends, transaction patterns, and expense ratios.
+
+### Documentation
+
+* Created data dictionary.
+* Created data quality summary report.
+* Documented database schema and analytical queries.
+
+## Deliverables
+
+* 10 cleaned CSV files in `data/processed/`
+* `bluestock_mf.db`
+* `schema.sql`
+* `queries.sql`
+* `data_dictionary.md`
+* `data_quality_summary.txt`
+
+## Day 2 Status
+
+* Data cleaning completed successfully.
+* SQLite database created and validated.
+* Analytical SQL queries prepared.
+* Documentation completed.
+* Project updated and committed to GitHub.
+
 
 ## Author
 
