@@ -51,6 +51,43 @@ MutualFund_Project
 - Prepared a data quality summary.
 - Uploaded the project to GitHub.
 
+Day 2 – Data Cleaning & SQLite Database Design
+Tasks Completed
+Data Cleaning
+Cleaned NAV history dataset.
+Converted dates to datetime format.
+Sorted records by AMFI code and date.
+Removed duplicates.
+Validated NAV values.
+Investor Transactions Cleaning
+Standardized transaction types.
+Validated transaction amounts.
+Fixed date formats.
+Verified KYC status values.
+Scheme Performance Cleaning
+Validated return metrics.
+Checked expense ratio ranges.
+Identified and reviewed anomalies.
+Database Design
+Designed SQLite star schema.
+Created dimension and fact tables.
+Defined primary and foreign key relationships.
+Database Loading
+Loaded cleaned datasets into SQLite using SQLAlchemy.
+Verified row counts after loading.
+SQL Analytics
+Created 10 analytical SQL queries for business insights.
+Documentation
+Created data dictionary.
+Created data quality summary report.
+Deliverables
+10 cleaned CSV files
+bluestock_mf.db
+schema.sql
+queries.sql
+data_dictionary.md
+data_quality_summary.txt
+
 ## Author
 
 **Vaishnavi Mathdevru**  

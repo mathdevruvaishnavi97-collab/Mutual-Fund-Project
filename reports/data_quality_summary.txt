@@ -1,4 +1,4 @@
-DATA QUALITY SUMMARY
+DATA QUALITY SUMMARY Day - 1
 
 1. Successfully loaded all 10 datasets.
 
@@ -19,3 +19,83 @@ DATA QUALITY SUMMARY
 9. No missing AMFI codes were found.
 
 10. Overall data quality is good and suitable for further analysis.
+
+
+Day 2 Data Quality Summary
+
+1. NAV History Dataset (02_nav_history.csv)
+
+Checks Performed:
+
+Converted date column to datetime format.
+Sorted records by AMFI code and date.
+Applied forward-fill for missing NAV values within each scheme.
+Removed duplicate records.
+Validated that all NAV values are greater than zero.
+
+Results:
+
+Total Records: 46,000
+Duplicate Records Found: 0
+Invalid NAV Values Found: 0
+Missing NAV Values After Cleaning: 0
+
+Status: Passed
+
+2. Investor Transactions Dataset (08_investor_transactions.csv)
+
+Checks Performed:
+
+Standardized transaction types.
+Converted transaction_date to datetime format.
+Validated transaction amount greater than zero.
+Checked KYC status values.
+Removed duplicate records.
+
+Results:
+
+Total Records: 32,778
+Invalid Transaction Amounts: 0
+Duplicate Records Found: 0
+Valid KYC Status Values: Verified, Pending
+
+Status: Passed
+
+3. Scheme Performance Dataset (07_scheme_performance.csv)
+
+Checks Performed:
+
+Validated return columns as numeric values.
+Checked for missing values in return metrics.
+Validated expense ratio range (0.1% to 2.5%).
+Removed duplicate records.
+
+Results:
+
+Total Records: 40
+Missing Return Values: 0
+Invalid Expense Ratios: 0
+Duplicate Records Found: 0
+
+Status: Passed
+
+Database Validation
+
+SQLite Database: bluestock_mf.db
+
+Loaded Tables:
+
+fact_nav
+fact_transactions
+fact_performance
+
+Row Count Verification:
+
+fact_nav: 46,000 rows
+fact_transactions: 32,778 rows
+fact_performance: 40 rows
+
+Result:
+Source CSV row counts matched database row counts successfully.
+
+Status: Passed
