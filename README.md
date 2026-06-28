@@ -131,6 +131,58 @@ MutualFund_Project
 * Project updated and committed to GitHub.
 
 
+## Tasks Completed (Day 3)
+
+- Performed Exploratory Data Analysis (EDA).
+- Visualized daily NAV trends.
+- Created AUM growth analysis.
+- Analyzed monthly SIP inflows.
+- Built category inflow heatmap.
+- Explored investor demographics.
+- Analyzed geographic investment distribution.
+- Visualized folio count growth.
+- Computed NAV return correlation matrix.
+- Created sector allocation donut chart.
+- Documented 10 key EDA findings.
+
+## Tasks Completed (Day 4)
+
+### Performance Analytics
+
+- Calculated daily returns for all mutual fund schemes.
+- Computed CAGR for performance comparison.
+- Calculated Sharpe Ratio.
+- Calculated Sortino Ratio.
+- Performed Alpha and Beta analysis.
+- Computed Maximum Drawdown.
+- Created Fund Scorecard (0–100).
+- Compared top funds with Nifty 50 and Nifty 100 benchmarks.
+- Calculated Tracking Error.
+- Generated performance analytics reports.
+
+### Deliverables
+
+- Performance_Analytics.ipynb
+- fund_scorecard.csv
+- alpha_beta.csv
+- sharpe_ratio.csv
+- sortino_ratio.csv
+- maximum_drawdown.csv
+- tracking_error.csv
+- cagr_comparison.csv
+- benchmark_comparison.png
+
+### Technologies Used
+
+- Python
+- Pandas
+- NumPy
+- SciPy
+- Matplotlib
+- Seaborn
+- SQLAlchemy
+- Jupyter Notebook
+
 ## Author
 
 **Vaishnavi Mathdevru**  
